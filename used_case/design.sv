@@ -7,6 +7,7 @@ module adder(
 
 endmodule
 
+
 interface adder_intf;
 
   logic [3:0] a;
