@@ -1,9 +1,9 @@
 //interface code
 //
 interface fa_if();
-  logic a;
-  logic b;
+  logic [3:0]a;
+  logic [3:0] b;
   logic c;
-  logic sum;
+  logic [3:0] sum;
   logic carry;
 endinterface

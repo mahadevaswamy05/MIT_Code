@@ -5,11 +5,14 @@ class generator extends uvm_sequence #(transaction);
 `uvm_object_utils(generator)
  
 transaction tr;
+
+constraint add_r { tr.a inside {[1:8]};};
+  constraint add_rq { tr.b inside {[1:8]};}; 
  
   function new(input string path = "generator");
     super.new(path);
   endfunction
- 
+
  
 virtual task body();
   tr = transaction::type_id::create("tr");

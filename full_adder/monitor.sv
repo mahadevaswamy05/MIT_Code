@@ -27,11 +27,11 @@ uvm_analysis_port #(transaction) send;
     virtual task run_phase(uvm_phase phase);
     forever begin
     #10;
-    tr.a <= aif.a;
-    tr.b <= aif.b;
-    tr.c <= aif.c;
-    tr.sum <= aif.sum;
-      tr.carry <= aif.carry;
+    tr.a = aif.a;
+    tr.b = aif.b;
+    tr.c = aif.c;
+    tr.sum = aif.sum;
+      tr.carry = aif.carry;
       `uvm_info("MON", $sformatf("Data send to Scoreboard a : %0b , b : %0b, c : %0b and sum : %0b, carry :%0b", tr.a,tr.b,tr.c,tr.sum,tr.carry), UVM_NONE);
     send.write(tr);
     end

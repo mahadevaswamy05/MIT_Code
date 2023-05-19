@@ -1,7 +1,6 @@
 # vsim adder_tb -c -do "run -all;exit;" 
-# Start time: 11:39:03 on May 16,2023
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: sequence.sv(19): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Start time: 15:32:21 on May 19,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -96,5 +95,5 @@
 # [TEST_DONE]     1
 # ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
 #    Time: 50 ns  Iteration: 54  Instance: /adder_tb
-# End time: 11:39:12 on May 16,2023, Elapsed time: 0:00:09
-# Errors: 0, Warnings: 1
+# End time: 15:32:42 on May 19,2023, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0

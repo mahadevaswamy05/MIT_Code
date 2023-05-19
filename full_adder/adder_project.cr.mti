@@ -1,0 +1,20 @@
+/hwetools/work_area/frontend/Mahadevaswamy/full_adder/top.sv {2 {vlog -work work -vopt -sv -stats=none /hwetools/work_area/frontend/Mahadevaswamy/full_adder/top.sv
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+** Note: (vlog-2286) /hwetools/work_area/frontend/Mahadevaswamy/full_adder/top.sv(1): Using implicit +incdir+/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: ** while parsing file included at /hwetools/work_area/frontend/Mahadevaswamy/full_adder/top.sv(12)
+** at scoreboard.sv(24): (vlog-2269) Unterminated string literal continues onto next line 24.
+** Warning: ** while parsing file included at /hwetools/work_area/frontend/Mahadevaswamy/full_adder/top.sv(12)
+** while parsing macro expansion: 'uvm_info' starting at scoreboard.sv(24)
+** at scoreboard.sv(25): (vlog-2643) Unterminated string literal continues onto next line.
+** Warning: /hwetools/work_area/frontend/Mahadevaswamy/full_adder/top.sv(2): (vlog-13233) Design unit "top_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Warning: sequence.sv(19): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling module fa
+-- Compiling interface fa_if
+-- Compiling module adder_tb
+
+Top level modules:
+	adder_tb
+
+} {} {}}
