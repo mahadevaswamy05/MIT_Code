@@ -27,7 +27,7 @@ virtual fa_if aif;
     aif.a <= tc.a;
     aif.b <= tc.b;
     aif.c <= tc.c;
-    `uvm_info("DRV", $sformatf("Trigger DUT a: %0b ,b :  %0b, c : %0b",tc.a, tc.b,tc.c), UVM_NONE); 
+    `uvm_info("DRV", $sformatf("Trigger DUT a: %0b ,b =  %0b, c : %0b",tc.a, tc.b,tc.c), UVM_NONE); 
     seq_item_port.item_done();
     #10;  
       

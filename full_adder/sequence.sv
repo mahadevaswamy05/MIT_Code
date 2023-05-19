@@ -3,7 +3,8 @@
 
 class generator extends uvm_sequence #(transaction);
 `uvm_object_utils(generator)
- 
+
+
 transaction tr;
 
 constraint add_r { tr.a inside {[1:8]};};
@@ -19,7 +20,7 @@ virtual task body();
   repeat(5) 
     begin
     start_item(tr);
-    tr.randomize();
+    void'(tr.randomize()); 
       `uvm_info("GEN",$sformatf("Data send to Driver a :%0b , b :%0b , cin=%0b ",tr.a,tr.b,tr.c), UVM_NONE);
     finish_item(tr);
     end

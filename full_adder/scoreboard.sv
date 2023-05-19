@@ -20,7 +20,8 @@ transaction tr;
   endfunction
  
   virtual function void write(input transaction t);
-   tr = t;
+
+  tr = t;
     `uvm_info("SCO",$sformatf("Data rcvd from Monitor a: %0b , b : %0b c: %0b and sum : %0b, carry
     : %0b",tr.a,tr.b,tr.c,tr.sum,tr.carry), UVM_NONE);
 if((tr.sum == ((tr.a) ^ (tr.b) ^ (tr.c))) && 

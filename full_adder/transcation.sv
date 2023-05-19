@@ -9,7 +9,6 @@ class transaction extends uvm_sequence_item;
   bit  [3:0] sum;
   bit carry;
  
-  
 
   function new(input string path = "transaction");
     super.new(path);

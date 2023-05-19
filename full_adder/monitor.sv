@@ -36,5 +36,6 @@ uvm_analysis_port #(transaction) send;
     send.write(tr);
     end
     endtask
-endclass
+
+  endclass
  

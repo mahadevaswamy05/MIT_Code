@@ -15,6 +15,8 @@
 
 module adder_tb;
 
+
+
 fa_if aif();
 
   fa dut(.a(aif.a), .b(aif.b), .c(aif.c), .sum(aif.sum), .carry(aif.carry));

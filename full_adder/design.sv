@@ -7,6 +7,8 @@ input c;
 output reg [0:3] sum;
 output reg carry;
 
+
+
 assign sum = a ^ b ^ c;
 assign carry = (a & b) |(a & c) | (b & c);
 
